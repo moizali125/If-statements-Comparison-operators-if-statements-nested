@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IF STATEMENTS ; COMPARISON OPERATORS</title>
+    <title>IF STATEMENTS ; COMPARISON OPERATORS ; IF STATEMENTS NESTED</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -11,7 +11,7 @@
     <div class="heading">
       <div class="space"></div>
       <div class="head">
-        <h1>If statements ; Comparison operators</h1>
+        <h1>If statements ; Comparison operators ; if statements nested</h1>
       </div>
       <div class="space"></div>
     </div>
@@ -140,6 +140,53 @@
         if (1 >= 1) { <br />
         if (0 <= 1) { <br />
         if (1 <= 1) { <br />
+      </p>
+    </div>
+    <div class="moiz">
+      <h1>-: If statements nested :-</h1>
+      <p class="ali">
+        Check out this code. <br />
+        1 if ((x === y || a === b) && c === d) { <br />
+        2 g = h; <br />
+        3 } <br />
+        4 else { <br />
+        5 e = f; <br />
+        6 } <br />
+        In the code above, if either of the first conditions is true, and, in
+        addition, the third <br />
+        condition is true, then g is assigned h. Otherwise, e is assigned f.
+        <br />
+        There's another way to code this, using nesting. <br />
+        1 if (c === d) { <br />
+        2 if (x === y) { <br />
+        3 g = h; <br />
+        4 } <br />
+        5 else if (a === b) { <br />
+        6 g = h; <br />
+        7 } <br />
+        8 else { <br />
+        9 e = f; <br />
+        10 } <br />
+        11 } <br />
+        12 else { <br />
+        13 e = f; <br />
+        14 } <br />
+        Nest levels are communicated to JavaScript by the positions of the curly
+        brackets. There <br />
+        are three blocks nested inside the top-level if. If the condition tested
+        by the top-level if—that c <br />
+        has the same value as d—is false, none of the blocks nested inside
+        executes. The opening curly <br />
+        bracket on line 1 and the closing curly bracket on line 11 enclose all
+        the nested code, telling <br />
+        JavaScript that everything inside is second-level. <br />
+        For readability, a lower level is indented 2 spaces beyond the level
+        above it. <br />
+        In the relatively simple set of tests and outcomes shown in this
+        example, I would prefer to <br />
+        use the more concise structure of multiple conditions. But when things
+        get really complicated, <br />
+        nested ifs are a good way to go. <br />
       </p>
     </div>
     <div class="moiz">
