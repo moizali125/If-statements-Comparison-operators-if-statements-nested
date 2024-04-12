@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IF STATEMENTS ; COMPARISON OPERATORS</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="blue"></div>
+    <div class="heading">
+      <div class="space"></div>
+      <div class="head">
+        <h1>If statements ; Comparison operators</h1>
+      </div>
+      <div class="space"></div>
+    </div>
+    <div class="blue-buttom">
+      <div class="para">
+        Assinment # 9-10 <br />
+        JAVASCRIPT
+      </div>
+    </div>
+    <div class="chap">
+      <h1><br />C h a p t e r s</h1>
+      <br />
+    </div>
+
+    <div class="moiz">
+      <h1>-: If statements :-</h1>
+      <p class="ali">
+        Suppose you code a prompt that asks, "Where does the Pope live?" <br />
+        If the user answers correctly, you display an alert congratulating him.
+        <br />
+        This is the code. <br />
+        1 var x = prompt("Where does the Pope live?"); <br />
+        2 if (x === "Vatican") { <br />
+        3 alert("Correct!"); <br />
+        4 } <br />
+        If the user enters "Vatican" in the prompt field, the congratulations
+        alert displays. If he <br />
+        enters something else, nothing happens. (This simplified code doesn't
+        allow for other correct <br />
+        answers, like "The Vatican." I don't want to get into that now.) <br />
+        There's a lot to take in here. Let's break it down. <br />
+        An if statement always begins with if. The space that separates it from
+        the parenthesis is <br />
+        new to you. I've taught you to code alerts and prompts with the opening
+        parenthesis running up <br />
+        against the keyword: alert("Hi"); Now I'm asking you not to do that in
+        an if statement. It's <br />
+        purely a matter of style, but common style rules sanction this
+        inconsistency. <br />
+        Following the if keyword-plus-space is the condition that's being
+        tested—does the <br />
+        variable that's been assigned the user's response have a value of
+        "Vatican"? <br />
+        The condition is enclosed in parentheses. <br />
+        If the condition tests true, something happens. Any number of statements
+        might execute. In <br />
+        this case, only one statement executes: a congratulatory alert displays.
+        <br />
+        The first line of an if statement ends with an opening curly bracket. An
+        entire if statement <br />
+        ends with a closing curly bracket on its own line. Note that this is an
+        exception to the rule that <br />
+        a statement ends with a semicolon. It's common to omit the semicolon
+        when it's a complex <br />
+        statement that's paragraph-like and ends in a curly bracket. <br />
+        But what about that triple equal sign? You might think that it should
+        just be an equal sign, <br />
+        but the equal sign is reserved for assigning a value to a variable. If
+        you're testing a variable <br />
+        for a value, you can't use the single equal sign. <br />
+        If you forget this rule and use a single equal sign when you should use
+        the triple equal <br />
+        sign, the code won't run properly. <br />
+        As you might expect, you can use a variable instead of a string in the
+        example code. <br />
+        1 var correctAnswer = "Vatican"; <br />
+        2 if (x === correctAnswer) { <br />
+        3 alert("Correct!"); <br />
+        4 } <br />
+        When a condition is met, you can have any number of statements execute.
+        <br />
+        1 var correctAnswer = "Vatican"; <br />
+        2 if (x === correctAnswer) { <br />
+        3 score++; <br />
+        4 userIQ = "genius"; <br />
+        5 alert("Correct!"); <br />
+        6 } <br />
+      </p>
+    </div>
+    <div class="moiz">
+      <h1>-: Comparison operators :-</h1>
+      <p class="ali">
+        Let's talk a little more about ===. It's a type of comparison operator,
+        specifically an <br />
+        equality operator. As you learned in the last chapter, you use it to
+        compare two things to see if <br />
+        they're equal. <br />
+        You can use the equality operator to compare a variable with a string, a
+        variable with a <br />
+        number, a variable with a math expression, or a variable with a
+        variable. And you can use it to <br />
+        compare various combinations. All of the following are legal first lines
+        in if statements: <br />
+        if (fullName === "Mark" + " " + "Myers") { <br />
+        if (fullName === firstName + " " + "Myers") { <br />
+        if (fullName === firstName + " " + "Myers") { <br />
+        if (fullName === "firstName + " " + lastName) { <br />
+        if (totalCost === 81.50 + 135) { <br />
+        if (totalCost === materialsCost + 135) { <br />
+        if (totalCost === materialsCost + laborCost) { <br />
+        if (x + y === a - b) { <br />
+        When you're comparing strings, the equality operat or is case-sensitive.
+        "Rose" does not <br />
+        equal "rose." <br />
+        Another comparison operator, !==, is the opposite of ===. It means is
+        not equal to. <br />
+        1 if (yourTicketNumber !== 487208) { <br />
+        2 alert("Better luck next time."); <br />
+        3 } <br />
+        Like ===, the not-equal operator can be used to compare numbers,
+        strings, variables, <br />
+        expressions, and combinations. <br />
+        Like ===, string comparisons using the not-equal operator are
+        case-sensitive. It's true that <br />
+        "Rose" !== "rose". <br />
+        Here are 4 more comparison operators, usually used to compare numbers.
+        <br />
+        > is greater than <br />
+        < is less than <br />
+        >= is greater than or equal to <br />
+        <= is less than or equal to <br />
+        In the examples below, all the conditions are true. <br />
+        if (1 > 0) { <br />
+        if (0 < 1) { <br />
+        if (1 >= 0) { <br />
+        if (1 >= 1) { <br />
+        if (0 <= 1) { <br />
+        if (1 <= 1) { <br />
+      </p>
+    </div>
+    <div class="moiz">
+      <h1>Assignment</h1>
+      <p class="ali">
+        <object
+          data="./chapters9-11-1.pdf"
+          type="application/pdf"
+          width="100%"
+          height="500px"
+        >
+          <p>
+            Unable to display PDF file.
+            <a href="./chapters9-11-1.pdf">Download</a>
+            instead.
+          </p>
+        </object>
+      </p>
+    </div>
+    <div class="chap">
+      <h1><br />Perform The Assignment</h1>
+      <br />
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
